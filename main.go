@@ -31,6 +31,7 @@ func main() {
 	var setEndian int
 	var dbPath string
 	flag.StringVar(&ip, "ip", "", "ip address to convert")
+	flag.IntVar(&setEndian, "se", 0, "set endianness")
 	flag.BoolVar(&endian, "e", false, "check endianness of your system")
 	flag.StringVar(&dbPath, "d", "./SxGeoCity.dat", "path to SxGeoCity.dat file")
 	flag.Parse()
